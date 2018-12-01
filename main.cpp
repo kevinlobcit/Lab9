@@ -6,7 +6,7 @@
 int main() {
 
     maze_game game = maze_game();
-    maze_factory factory = enchFairyLand_maze_factory();
+    maze_factory* factory = new enchFairyLand_maze_factory();
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }

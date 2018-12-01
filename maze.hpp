@@ -7,8 +7,9 @@
 
 class maze {
 public:
-    maze();
-    virtual int getMazeNum();
+    maze(){};
+    virtual ~maze(){};
+    virtual int getMazeNum()=0;
 };
 
 #endif //LAB9_MAZE_HPP

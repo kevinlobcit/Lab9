@@ -6,7 +6,8 @@
 #define LAB9_DOOR_HPP
 class door {
 public:
-    door();
-    virtual int getDoorNum();
+    door(){};
+    virtual ~door(){};
+    virtual int getDoorNum()=0;
 };
 #endif //LAB9_DOOR_HPP

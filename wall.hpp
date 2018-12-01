@@ -7,8 +7,9 @@
 
 class wall {
 public:
-    wall();
-    virtual int getWallNum();
+    wall(){};
+    virtual ~wall(){};
+    virtual int getWallNum()=0;
 
 };
 #endif //LAB9_WALL_HPP

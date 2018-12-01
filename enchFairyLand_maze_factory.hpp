@@ -14,22 +14,25 @@
 
 class enchFairyLand_maze_factory:public maze_factory {
 public:
+    enchFairyLand_maze_factory()
+    {
 
-    maze make_maze()
-    {
-        return enchFairyLand_maze();
     }
-    wall make_wall()
+    maze* make_maze() override
     {
-        return make_wall();
+        return new enchFairyLand_maze();
     }
-    room make_room()
+    wall* make_wall() override
     {
-        return make_room();
+        return new enchFairyLand_wall();
     }
-    door make_door()
+    room* make_room() override
     {
-        return make_door();
+        return new enchFairyLand_room();
+    }
+    door* make_door() override
+    {
+        return new enchFairyLand_door();
     }
 
 

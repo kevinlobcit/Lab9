@@ -10,12 +10,14 @@
 #include "room.hpp"
 #include "door.hpp"
 
-class maze_factory {
+class maze_factory{
 public:
-    virtual maze make_maze();
-    virtual wall make_wall();
-    virtual room make_room();
-    virtual door make_door();
+    maze_factory(){};
+    virtual maze* make_maze()=0;
+    virtual wall* make_wall()=0;
+    virtual room* make_room()=0;
+    virtual door* make_door()=0;
+    virtual ~maze_factory(){};
 
 
 };

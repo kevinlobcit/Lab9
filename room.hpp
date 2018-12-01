@@ -7,7 +7,8 @@
 
 class room {
 public:
-    room();
-    virtual int getRoomNum();
+    room(){};
+    virtual ~room(){};
+    virtual int getRoomNum()=0;
 };
 #endif //LAB9_ROOM_HPP
