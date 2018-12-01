@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "enchFairyLand_maze_factory.hpp"
+
 #include "maze_factory.hpp"
 #include "maze_game.hpp"
 int main() {
