@@ -7,11 +7,17 @@
 
 #include "door.hpp"
 
+static int doorCount = 0;
 class enchFairyLand_door:public door {
+int doorNum;
 public:
     enchFairyLand_door()
     {
-
+        doorNum = doorCount++;
+    }
+    int getDoorNum() override
+    {
+        return doorNum;
     }
 };
 

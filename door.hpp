@@ -7,6 +7,6 @@
 class door {
 public:
     door();
-    virtual int getDoorSize();
+    virtual int getDoorNum();
 };
 #endif //LAB9_DOOR_HPP

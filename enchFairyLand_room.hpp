@@ -7,11 +7,17 @@
 
 #include "room.hpp"
 
+static int roomCount = 0;
 class enchFairyLand_room:public room {
+int roomNum;
 public:
     enchFairyLand_room()
     {
-
+        roomNum = roomCount++;
+    }
+    int getRoomNum() override
+    {
+        return roomNum;
     }
 };
 

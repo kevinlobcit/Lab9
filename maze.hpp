@@ -6,10 +6,9 @@
 #define LAB9_MAZE_HPP
 
 class maze {
-
 public:
     maze();
-    virtual int getMazeSize();
+    virtual int getMazeNum();
 };
 
 #endif //LAB9_MAZE_HPP

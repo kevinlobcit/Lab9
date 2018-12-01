@@ -7,13 +7,19 @@
 
 #include "maze.hpp"
 
+static int mazeCount = 0;
 class enchFairyLand_maze:public maze {
+int mazeNum;
 public:
     enchFairyLand_maze()
     {
+        mazeNum = mazeCount++;
     }
 
-
+    int getMazeNum() override
+    {
+        return mazeNum;
+    }
 };
 
 #endif //LAB9_ENCHFAIRYLAND_MAZE_HPP

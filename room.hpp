@@ -8,6 +8,6 @@
 class room {
 public:
     room();
-    virtual int getRoomSize();
+    virtual int getRoomNum();
 };
 #endif //LAB9_ROOM_HPP

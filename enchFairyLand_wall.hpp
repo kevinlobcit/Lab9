@@ -7,11 +7,18 @@
 
 #include "wall.hpp"
 
+static int wallCount = 0;
 class enchFairyLand_wall:public wall {
+int wallNum;
 public:
     enchFairyLand_wall()
     {
+        wallNum = wallCount++;
+    }
 
+    int getWallNum() override
+    {
+        return wallNum;
     }
 };
 

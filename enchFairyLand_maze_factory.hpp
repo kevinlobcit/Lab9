@@ -14,6 +14,7 @@
 
 class enchFairyLand_maze_factory:public maze_factory {
 public:
+
     maze make_maze()
     {
         return enchFairyLand_maze();

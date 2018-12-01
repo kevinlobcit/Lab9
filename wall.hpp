@@ -8,7 +8,7 @@
 class wall {
 public:
     wall();
-    virtual int getWallSize();
+    virtual int getWallNum();
 
 };
 #endif //LAB9_WALL_HPP
